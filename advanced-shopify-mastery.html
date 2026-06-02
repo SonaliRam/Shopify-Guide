@@ -36,7 +36,6 @@
         --font-body: "DM Sans", sans-serif;
         --font-code: "JetBrains Mono", monospace;
       }
-
       *,
       *::before,
       *::after {
@@ -44,11 +43,9 @@
         margin: 0;
         padding: 0;
       }
-
       html {
         scroll-behavior: smooth;
       }
-
       body {
         background: var(--bg);
         color: var(--text);
@@ -57,8 +54,6 @@
         line-height: 1.7;
         overflow-x: hidden;
       }
-
-      /* ─── HEADER ─────────────────────────────── */
       .site-header {
         position: fixed;
         top: 0;
@@ -116,15 +111,11 @@
         border-radius: 2px;
         transition: all 0.3s;
       }
-
-      /* ─── LAYOUT ─────────────────────────────── */
       .page-wrap {
         display: flex;
         padding-top: 60px;
         min-height: 100vh;
       }
-
-      /* ─── SIDEBAR ────────────────────────────── */
       .sidebar {
         width: 280px;
         flex-shrink: 0;
@@ -146,7 +137,6 @@
         background: var(--border2);
         border-radius: 4px;
       }
-
       .sidebar-label {
         font-family: var(--font-code);
         font-size: 0.65rem;
@@ -159,7 +149,6 @@
       .sidebar-label:first-child {
         margin-top: 0;
       }
-
       .toc-item {
         display: flex;
         align-items: center;
@@ -207,15 +196,11 @@
       .toc-item.active .toc-num {
         color: var(--accent);
       }
-
-      /* ─── MAIN CONTENT ───────────────────────── */
       .main-content {
         flex: 1;
         min-width: 0;
         padding: 3rem 4rem 6rem;
       }
-
-      /* ─── HERO ───────────────────────────────── */
       .hero {
         margin-bottom: 4rem;
         padding: 3rem;
@@ -301,8 +286,6 @@
         font-size: 0.75rem;
         color: var(--text3);
       }
-
-      /* ─── CHAPTER SECTIONS ───────────────────── */
       .chapter {
         margin-bottom: 5rem;
         scroll-margin-top: 80px;
@@ -336,8 +319,6 @@
         margin-bottom: 2rem;
         opacity: 0.4;
       }
-
-      /* ─── CARDS ──────────────────────────────── */
       .card {
         background: var(--bg2);
         border: 1px solid var(--border);
@@ -352,7 +333,6 @@
         border-color: var(--border2);
         box-shadow: var(--shadow);
       }
-
       .card-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -386,8 +366,6 @@
         color: var(--text2);
         line-height: 1.5;
       }
-
-      /* ─── CALLOUT BOXES ──────────────────────── */
       .callout {
         border-radius: var(--radius2);
         padding: 1rem 1.25rem;
@@ -428,8 +406,6 @@
       .callout.danger .callout-title {
         color: var(--accent4);
       }
-
-      /* ─── CODE BLOCKS ────────────────────────── */
       .code-wrap {
         position: relative;
         margin: 1.25rem 0;
@@ -484,30 +460,28 @@
       }
       .kw {
         color: #c792ea;
-      } /* keyword */
+      }
       .fn {
         color: #82aaff;
-      } /* function */
+      }
       .str {
         color: #c3e88d;
-      } /* string */
+      }
       .cm {
         color: #546e7a;
-      } /* comment */
+      }
       .num {
         color: #f78c6c;
-      } /* number */
+      }
       .op {
         color: #89ddff;
-      } /* operator */
+      }
       .var {
         color: #ffcb6b;
-      } /* variable */
+      }
       .tag {
         color: #f07178;
-      } /* tag */
-
-      /* ─── BADGES ─────────────────────────────── */
+      }
       .badge {
         display: inline-block;
         font-family: var(--font-code);
@@ -543,8 +517,6 @@
         color: var(--accent4);
         border: 1px solid rgba(255, 107, 107, 0.2);
       }
-
-      /* ─── PROS/MISTAKES ──────────────────────── */
       .two-col {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -600,8 +572,6 @@
         content: "✗";
         color: var(--accent4);
       }
-
-      /* ─── YOUTUBE BOX ────────────────────────── */
       .yt-box {
         background: rgba(255, 59, 48, 0.06);
         border: 1px solid rgba(255, 59, 48, 0.18);
@@ -639,8 +609,6 @@
         color: var(--text2);
         margin-top: 0.3rem;
       }
-
-      /* ─── DIAGRAM ────────────────────────────── */
       .diagram {
         background: var(--bg3);
         border: 1px solid var(--border);
@@ -680,8 +648,6 @@
         color: var(--text3);
         font-size: 1.2rem;
       }
-
-      /* ─── TIMELINE ───────────────────────────── */
       .timeline {
         margin: 2rem 0;
       }
@@ -767,8 +733,6 @@
         flex-shrink: 0;
         margin-top: 0.05rem;
       }
-
-      /* ─── ACCORDION ──────────────────────────── */
       .accordion {
         margin: 1.25rem 0;
       }
@@ -814,8 +778,6 @@
         max-height: 800px;
         padding: 1rem 1.1rem;
       }
-
-      /* ─── RESOURCE LINKS ─────────────────────── */
       .resource-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -857,8 +819,6 @@
         color: var(--text3);
         margin-top: 0.3rem;
       }
-
-      /* ─── LEVEL BADGES ───────────────────────── */
       .level-bar {
         display: flex;
         align-items: center;
@@ -886,8 +846,6 @@
         font-family: var(--font-code);
         white-space: nowrap;
       }
-
-      /* ─── STEP LIST ──────────────────────────── */
       .step-list {
         list-style: none;
         counter-reset: steps;
@@ -920,8 +878,6 @@
         align-items: center;
         justify-content: center;
       }
-
-      /* ─── TYPOGRAPHY ─────────────────────────── */
       h2 {
         font-family: var(--font-head);
         font-size: 1.15rem;
@@ -966,8 +922,6 @@
       a {
         color: var(--accent);
       }
-
-      /* ─── PROGRESS NAV ───────────────────────── */
       .progress-wrap {
         position: fixed;
         top: 60px;
@@ -983,8 +937,6 @@
         background: linear-gradient(to right, var(--accent), var(--accent2));
         transition: width 0.1s;
       }
-
-      /* ─── MOBILE ─────────────────────────────── */
       @media (max-width: 900px) {
         .sidebar {
           position: fixed;
@@ -1039,8 +991,6 @@
           grid-template-columns: 1fr;
         }
       }
-
-      /* ─── SCROLLBAR ──────────────────────────── */
       ::-webkit-scrollbar {
         width: 6px;
         height: 6px;
@@ -1052,8 +1002,6 @@
         background: var(--border2);
         border-radius: 6px;
       }
-
-      /* ─── ANIMATION ──────────────────────────── */
       @keyframes fadeUp {
         from {
           opacity: 0;
@@ -1070,12 +1018,9 @@
     </style>
   </head>
   <body>
-    <!-- Progress Bar -->
     <div class="progress-wrap">
       <div class="progress-bar" id="progressBar"></div>
     </div>
-
-    <!-- Header -->
     <header class="site-header">
       <div class="site-logo">⚡ Shopify App Mastery</div>
       <div class="header-badge">
@@ -1085,12 +1030,8 @@
         <span></span><span></span><span></span>
       </button>
     </header>
-
-    <!-- Sidebar Overlay -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
-
     <div class="page-wrap">
-      <!-- Sidebar -->
       <aside class="sidebar" id="sidebar">
         <div class="sidebar-label">Getting Started</div>
         <a class="toc-item active" href="#ch1" onclick="closeSidebar()"
@@ -1141,10 +1082,7 @@
           ><span class="toc-num">15</span>Best Resources</a
         >
       </aside>
-
-      <!-- Main -->
       <main class="main-content">
-        <!-- Hero -->
         <div class="hero">
           <div class="hero-kicker">Advanced Shopify Mastery · 2025 Edition</div>
           <h1 class="hero-title">
@@ -1175,10 +1113,6 @@
             </div>
           </div>
         </div>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 1 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch1">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 01</span>
@@ -1187,14 +1121,12 @@
             </h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Beginner</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg"></div>
             <div class="level-seg"></div>
           </div>
-
           <p>
             You already know how to <strong>build Shopify themes</strong>. You
             can create sections, write Liquid, add metafields, and customize
@@ -1202,7 +1134,6 @@
             has a ceiling.
             <strong>Shopify App Development is the next level.</strong>
           </p>
-
           <h2>🤔 What is Shopify App Development?</h2>
           <p>
             Think of it this way: A <strong>theme</strong> changes how a store
@@ -1216,7 +1147,6 @@
             install from the <strong>Shopify App Store</strong> (or use
             privately) to power their business.
           </p>
-
           <div class="card-grid">
             <div class="grid-card">
               <div class="grid-card-icon">🎨</div>
@@ -1235,7 +1165,6 @@
               </div>
             </div>
           </div>
-
           <h2>💰 Why App Developers Earn More</h2>
           <p>
             Theme freelancers typically earn ₹3,000–₹15,000 per project. App
@@ -1260,14 +1189,12 @@
               you sleep
             </li>
           </ul>
-
           <div class="callout info">
             <div class="callout-title">📌 Real Numbers</div>
             Top Shopify apps in the App Store earn $10,000 to $100,000+ per
             month from subscriptions. Even small utility apps earn
             $500–$5,000/month passively.
           </div>
-
           <h2>🌍 Real-World App Examples</h2>
           <div class="card-grid">
             <div class="grid-card">
@@ -1301,7 +1228,6 @@
               </div>
             </div>
           </div>
-
           <h2>🎯 Freelancing & SaaS Opportunities</h2>
           <ul>
             <li>
@@ -1321,7 +1247,6 @@
               Shopify app devs at $2,000–$8,000/month
             </li>
           </ul>
-
           <div class="two-col">
             <div class="tip-box">
               <div class="box-title">✓ Pro Tips</div>
@@ -1342,7 +1267,6 @@
               </ul>
             </div>
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -1357,31 +1281,24 @@
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 2 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch2">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 02</span>
             <h1 class="chapter-title">Types of Shopify Apps</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Beginner</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg"></div>
             <div class="level-seg"></div>
           </div>
-
           <p>
             Not all Shopify apps are the same. Before you start building, you
             need to understand the
             <strong>five main types of Shopify apps</strong> — because each type
             is used in a different situation.
           </p>
-
           <h2>1. Custom Apps</h2>
           <p>
             A <strong>custom app</strong> is built for
@@ -1394,7 +1311,6 @@
             Great starting point. You get paid per project. No need to manage
             subscriptions or deal with App Store approval. Start here!
           </div>
-
           <h2>2. Public Apps</h2>
           <p>
             A <strong>public app</strong> is published on the Shopify App Store.
@@ -1408,7 +1324,6 @@
             "Klaviyo Email Marketing" or "PageFly Landing Page" — these are
             public apps earning millions monthly.
           </div>
-
           <h2>3. Private / Internal Apps</h2>
           <p>
             A <strong>private app</strong> is for internal company use. For
@@ -1416,7 +1331,6 @@
             operations. It's never listed publicly, never installed by outside
             merchants.
           </p>
-
           <h2>4. Embedded Apps</h2>
           <p>
             An <strong>embedded app</strong> runs
@@ -1425,7 +1339,6 @@
             This uses <strong>App Bridge</strong> technology. Most modern
             Shopify apps are embedded.
           </p>
-
           <div class="diagram">
             <div class="flow">
               <div class="flow-box">Shopify Admin</div>
@@ -1445,7 +1358,6 @@
               Embedded App appears inside Shopify Admin as a tab/page
             </p>
           </div>
-
           <h2>5. Standalone Apps</h2>
           <p>
             A <strong>standalone app</strong> lives on its own website —
@@ -1453,7 +1365,6 @@
             Less common now because Shopify prefers embedded apps, but still
             used for complex tools or dashboards.
           </p>
-
           <div class="card-grid">
             <div class="grid-card">
               <div class="grid-card-icon">🔧</div>
@@ -1492,7 +1403,6 @@
               </div>
             </div>
           </div>
-
           <div class="callout warn">
             <div class="callout-title">⚠️ Beginner Advice</div>
             Start by building a <strong>Custom App</strong> or an
@@ -1500,7 +1410,6 @@
             the App Store — learn the basics first. The App Store has a review
             process that can take weeks.
           </div>
-
           <div class="two-col">
             <div class="tip-box">
               <div class="box-title">✓ Pro Tips</div>
@@ -1520,7 +1429,6 @@
               </ul>
             </div>
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -1535,31 +1443,24 @@
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 3 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch3">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 03</span>
             <h1 class="chapter-title">Understanding APIs</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Beginner–Intermediate</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg fill-inter"></div>
             <div class="level-seg"></div>
           </div>
-
           <p>
             The word "API" might feel scary. Don't worry — by the end of this
             chapter, APIs will feel like a totally normal thing. You've already
             used APIs without knowing it (Shopify sections talk to liquid
             objects that come from data sources — same concept).
           </p>
-
           <h2>What is an API?</h2>
           <p>
             Imagine you're at a restaurant. You <em>don't</em> walk into the
@@ -1573,7 +1474,6 @@
             kitchen. You ask the API for data, it goes and gets it, and returns
             the result.
           </p>
-
           <div class="diagram">
             <div class="flow">
               <div class="flow-box highlight">Your App</div>
@@ -1595,7 +1495,6 @@
               How API communication works
             </p>
           </div>
-
           <h2>REST API vs GraphQL API</h2>
           <div class="card-grid">
             <div class="grid-card">
@@ -1617,7 +1516,6 @@
               </div>
             </div>
           </div>
-
           <h2>GraphQL Example (Beginner Friendly)</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -1641,7 +1539,6 @@
   }
 }</pre>
           </div>
-
           <h2>Key Shopify APIs</h2>
           <div class="accordion">
             <div class="accordion-item open">
@@ -1703,7 +1600,6 @@
               </div>
             </div>
           </div>
-
           <h2>OAuth Flow — Step by Step</h2>
           <div class="diagram">
             <div
@@ -1766,7 +1662,6 @@
               </div>
             </div>
           </div>
-
           <div class="callout warn">
             <div class="callout-title">
               ⚠️ Access Token = Your Password to the Store
@@ -1775,7 +1670,6 @@
             Store them securely in your database or environment variables. If
             leaked, a bad actor can access the merchant's store data.
           </div>
-
           <div class="two-col">
             <div class="tip-box">
               <div class="box-title">✓ Pro Tips</div>
@@ -1796,7 +1690,6 @@
               </ul>
             </div>
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -1812,23 +1705,17 @@
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 4 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch4">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 04</span>
             <h1 class="chapter-title">Shopify App Architecture</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <p>
             A Shopify app isn't just "one thing". It has multiple parts that
             work together. Understanding this architecture will help you know
             what to learn and why each piece matters.
           </p>
-
           <h2>The 4 Layers of a Shopify App</h2>
           <div class="diagram">
             <div
@@ -1886,7 +1773,6 @@
               </div>
             </div>
           </div>
-
           <h2>Key Technologies Explained</h2>
           <div class="accordion">
             <div class="accordion-item open">
@@ -1954,7 +1840,6 @@
               </div>
             </div>
           </div>
-
           <h2>App Request Flow</h2>
           <div class="diagram">
             <div class="flow">
@@ -1969,7 +1854,6 @@
               <div class="flow-box">Returns data to frontend</div>
             </div>
           </div>
-
           <div class="two-col">
             <div class="tip-box">
               <div class="box-title">✓ Pro Tips</div>
@@ -1990,7 +1874,6 @@
               </ul>
             </div>
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -2006,24 +1889,18 @@
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 5 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch5">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 05</span>
             <h1 class="chapter-title">Next.js for Shopify Apps</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Intermediate</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg fill-inter"></div>
             <div class="level-seg"></div>
           </div>
-
           <p>
             Next.js is the official framework used in Shopify CLI's app
             template. If you want to build Shopify apps, you
@@ -2031,7 +1908,6 @@
             React, which you'll learn as you go. And the App Router makes
             backend logic feel almost magical.
           </p>
-
           <h2>Why Next.js?</h2>
           <ul>
             <li>
@@ -2055,7 +1931,6 @@
               Railway, Render
             </li>
           </ul>
-
           <h2>Next.js File Structure (App Router)</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2076,7 +1951,6 @@
 ├── <span class="var">shopify.server.js</span>      <span class="cm">← Shopify auth setup</span>
 └── <span class="var">package.json</span></pre>
           </div>
-
           <h2>API Route Example — Fetch Products</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2086,11 +1960,9 @@
             </div>
             <pre><span class="cm">// This is a BACKEND file — runs on server, never exposed to browser</span>
 <span class="kw">import</span> { authenticate } <span class="kw">from</span> <span class="str">"../../../shopify.server"</span>;
-
 <span class="kw">export async function</span> <span class="fn">GET</span>(request) {
   <span class="cm">// Step 1: Verify the request is from a real logged-in merchant</span>
   <span class="kw">const</span> { admin } = <span class="kw">await</span> <span class="fn">authenticate.admin</span>(request);
-
   <span class="cm">// Step 2: Query Shopify's GraphQL API</span>
   <span class="kw">const</span> response = <span class="kw">await</span> admin.<span class="fn">graphql</span>(
     <span class="str">`#graphql
@@ -2107,13 +1979,11 @@
       }
     `</span>
   );
-
   <span class="cm">// Step 3: Return data as JSON to frontend</span>
   <span class="kw">const</span> data = <span class="kw">await</span> response.<span class="fn">json</span>();
   <span class="kw">return</span> Response.<span class="fn">json</span>(data);
 }</pre>
           </div>
-
           <h2>Server Components vs Client Components</h2>
           <div class="callout info">
             <div class="callout-title">Key Concept: Server vs Client</div>
@@ -2123,7 +1993,6 @@
             <code>"use client"</code> at the top when you need browser
             interactivity (onClick, useState, forms).
           </div>
-
           <div class="code-wrap">
             <div class="code-header">
               <span class="code-lang"
@@ -2136,7 +2005,6 @@
   <span class="kw">return</span> &lt;<span class="tag">div</span>&gt;{products.<span class="fn">map</span>(p =&gt; &lt;<span class="tag">p</span> <span class="var">key</span>={p.id}&gt;{p.title}&lt;/<span class="tag">p</span>&gt;)}&lt;/<span class="tag">div</span>&gt;;
 }</pre>
           </div>
-
           <div class="code-wrap">
             <div class="code-header">
               <span class="code-lang"
@@ -2144,15 +2012,12 @@
               ><button class="copy-btn" onclick="copyCode(this)">Copy</button>
             </div>
             <pre><span class="str">"use client"</span>; <span class="cm">// This line makes it a client component</span>
-
 <span class="kw">import</span> { useState } <span class="kw">from</span> <span class="str">"react"</span>;
-
 <span class="kw">export default function</span> <span class="fn">Counter</span>() {
   <span class="kw">const</span> [count, setCount] = <span class="fn">useState</span>(<span class="num">0</span>);
   <span class="kw">return</span> &lt;<span class="tag">button</span> <span class="var">onClick</span>={() =&gt; <span class="fn">setCount</span>(count + <span class="num">1</span>)}&gt;Count: {count}&lt;/<span class="tag">button</span>&gt;;
 }</pre>
           </div>
-
           <div class="two-col">
             <div class="tip-box">
               <div class="box-title">✓ Pro Tips</div>
@@ -2173,7 +2038,6 @@
               </ul>
             </div>
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -2189,24 +2053,18 @@
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 6 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch6">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 06</span>
             <h1 class="chapter-title">Shopify CLI — Complete Guide</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Beginner → Intermediate</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg fill-inter"></div>
             <div class="level-seg"></div>
           </div>
-
           <p>
             <strong>Shopify CLI</strong> is your most important tool as a
             Shopify app developer. It does everything automatically — creates
@@ -2214,7 +2072,6 @@
             handles the confusing OAuth setup for you.
             <em>You don't need to set up OAuth manually anymore.</em>
           </p>
-
           <h2>What is Shopify CLI?</h2>
           <p>
             Shopify CLI (Command Line Interface) is a tool you run in your
@@ -2227,7 +2084,6 @@
             Think of it as the "create-react-app" but for Shopify apps — but
             much more powerful.
           </p>
-
           <h2>Installation</h2>
           <div class="callout warn">
             <div class="callout-title">⚠️ Prerequisites First</div>
@@ -2236,7 +2092,6 @@
             <strong>npm or pnpm</strong> installed. Check:
             <code>node --version</code>
           </div>
-
           <div class="code-wrap">
             <div class="code-header">
               <span class="code-lang"
@@ -2245,12 +2100,10 @@
             </div>
             <pre><span class="cm"># Download Node.js LTS from:</span>
 <span class="cm"># https://nodejs.org</span>
-
 <span class="cm"># Verify installation</span>
 node --version      <span class="cm"># Should show v18.0.0 or higher</span>
 npm --version       <span class="cm"># Should show 9.x or higher</span></pre>
           </div>
-
           <div class="code-wrap">
             <div class="code-header">
               <span class="code-lang">Terminal — Install Shopify CLI</span
@@ -2258,13 +2111,10 @@ npm --version       <span class="cm"># Should show 9.x or higher</span></pre>
             </div>
             <pre><span class="cm"># Install Shopify CLI globally</span>
 npm install -g @shopify/cli
-
 <span class="cm"># Verify installation</span>
 shopify version
-
 <span class="cm"># Should output something like: @shopify/cli/3.x.x</span></pre>
           </div>
-
           <h2>Login to Your Shopify Partner Account</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2273,11 +2123,9 @@ shopify version
             </div>
             <pre><span class="cm"># Login to your Shopify Partner account</span>
 shopify auth login
-
 <span class="cm"># This opens your browser to log in</span>
 <span class="cm"># Use your partners.shopify.com account</span></pre>
           </div>
-
           <h2>Create a New App</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2286,19 +2134,15 @@ shopify auth login
             </div>
             <pre><span class="cm"># Create a new Shopify app</span>
 shopify app init
-
 <span class="cm"># CLI will ask you:
 # - App name
 # - Template (choose: node — Next.js based)
 # - Package manager (choose npm or pnpm)</span>
-
 <span class="cm"># Go into your new app folder</span>
 cd my-app-name
-
 <span class="cm"># Install dependencies</span>
 npm install</pre>
           </div>
-
           <h2>Connect Dev Store & Run Locally</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2310,21 +2154,17 @@ npm install</pre>
 # - Creates a tunnel URL (so Shopify can reach localhost)
 # - Installs the app on your dev store
 # - Opens the app in your browser</span>
-
 shopify app dev
-
 <span class="cm"># On first run, it will ask which store to use.
 # Select your development store.
 # CLI will print a URL like: https://abc123.trycloudflare.com</span></pre>
           </div>
-
           <div class="callout success">
             <div class="callout-title">✅ What Just Happened?</div>
             Shopify CLI automatically created a Cloudflare tunnel from your
             <code>localhost:3000</code> to a public HTTPS URL. Shopify can now
             reach your local app. No Ngrok needed!
           </div>
-
           <h2>Generate Extensions</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2333,14 +2173,11 @@ shopify app dev
             </div>
             <pre><span class="cm"># Generate a Checkout UI extension</span>
 shopify app generate extension --type checkout-ui
-
 <span class="cm"># Generate a Product Subscription extension</span>
 shopify app generate extension --type subscription-ui
-
 <span class="cm"># Generate an Admin UI extension</span>
 shopify app generate extension --type admin-action</pre>
           </div>
-
           <h2>Deploy Your App</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2349,14 +2186,11 @@ shopify app generate extension --type admin-action</pre>
             </div>
             <pre><span class="cm"># Deploy extensions to Shopify (not your server)</span>
 shopify app deploy
-
 <span class="cm"># Build your Next.js app for production</span>
 npm run build
-
 <span class="cm"># For server deployment (Vercel, Railway, etc.) use git push
 # The hosting service builds and deploys automatically</span></pre>
           </div>
-
           <h2>All Useful CLI Commands</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2366,7 +2200,6 @@ npm run build
             <pre><span class="cm"># ─── AUTH ───────────────────────────────────</span>
 shopify auth login                <span class="cm"># Login to partner account</span>
 shopify auth logout               <span class="cm"># Logout</span>
-
 <span class="cm"># ─── APP ────────────────────────────────────</span>
 shopify app init                  <span class="cm"># Create new app</span>
 shopify app dev                   <span class="cm"># Run app locally with tunnel</span>
@@ -2374,17 +2207,14 @@ shopify app build                 <span class="cm"># Build for production</span>
 shopify app deploy                <span class="cm"># Deploy extensions</span>
 shopify app info                  <span class="cm"># Show app configuration</span>
 shopify app config link           <span class="cm"># Link to existing app in Partner dashboard</span>
-
 <span class="cm"># ─── EXTENSIONS ─────────────────────────────</span>
 shopify app generate extension    <span class="cm"># Generate a new extension</span>
 shopify extension push            <span class="cm"># Push extension changes</span>
-
 <span class="cm"># ─── HELP ───────────────────────────────────</span>
 shopify help                      <span class="cm"># See all commands</span>
 shopify app --help                <span class="cm"># Help for app commands</span>
 shopify version                   <span class="cm"># Check CLI version</span></pre>
           </div>
-
           <h2>Common CLI Errors & Fixes</h2>
           <div class="accordion">
             <div class="accordion-item">
@@ -2445,7 +2275,6 @@ shopify version                   <span class="cm"># Check CLI version</span></p
               </div>
             </div>
           </div>
-
           <div class="two-col">
             <div class="tip-box">
               <div class="box-title">✓ Pro Tips</div>
@@ -2474,7 +2303,6 @@ shopify version                   <span class="cm"># Check CLI version</span></p
               </ul>
             </div>
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -2489,24 +2317,18 @@ shopify version                   <span class="cm"># Check CLI version</span></p
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 7 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch7">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 07</span>
             <h1 class="chapter-title">Hosting & Deployment</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <p>
             Your Shopify app needs to live on a server accessible via the
             internet — not just your laptop. When a merchant installs your app,
             Shopify needs to call your URLs. Let's understand hosting options
             from free to production-grade.
           </p>
-
           <h2>Can You Build for Free?</h2>
           <div class="callout success">
             <div class="callout-title">✅ Yes! Free Options Exist</div>
@@ -2515,7 +2337,6 @@ shopify version                   <span class="cm"># Check CLI version</span></p
             <strong>Vercel, Railway, and Render all have free tiers</strong>.
             You can build and test a Shopify app with zero hosting cost.
           </div>
-
           <h2>Development: Tunnel URLs</h2>
           <p>
             When you run <code>shopify app dev</code>, Shopify CLI creates a
@@ -2523,7 +2344,6 @@ shopify version                   <span class="cm"># Check CLI version</span></p
             points to your localhost. This is how Shopify reaches your app while
             it's running on your computer.
           </p>
-
           <div class="card-grid">
             <div class="grid-card">
               <div class="grid-card-icon">☁️</div>
@@ -2543,7 +2363,6 @@ shopify version                   <span class="cm"># Check CLI version</span></p
               </div>
             </div>
           </div>
-
           <h2>Production Hosting Options</h2>
           <div class="card-grid">
             <div class="grid-card">
@@ -2582,7 +2401,6 @@ shopify version                   <span class="cm"># Check CLI version</span></p
               </div>
             </div>
           </div>
-
           <h2>Production Deployment Flow (Vercel)</h2>
           <div class="diagram">
             <div
@@ -2630,7 +2448,6 @@ shopify version                   <span class="cm"># Check CLI version</span></p
               </div>
             </div>
           </div>
-
           <h2>Environment Variables on Vercel</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2644,7 +2461,6 @@ SHOPIFY_APP_URL=https://yourapp.vercel.app
 SCOPES=read_products,write_orders
 DATABASE_URL=your_database_connection_string</pre>
           </div>
-
           <div class="callout warn">
             <div class="callout-title">⚠️ Custom Domain for Production</div>
             When going to production, buy a domain (e.g., myapp.com) from
@@ -2652,7 +2468,6 @@ DATABASE_URL=your_database_connection_string</pre>
             App URL in Shopify Partner dashboard. This looks professional to
             merchants.
           </div>
-
           <div class="two-col">
             <div class="tip-box">
               <div class="box-title">✓ Pro Tips</div>
@@ -2675,7 +2490,6 @@ DATABASE_URL=your_database_connection_string</pre>
               </ul>
             </div>
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -2691,30 +2505,23 @@ DATABASE_URL=your_database_connection_string</pre>
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 8 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch8">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 08</span>
             <h1 class="chapter-title">Payment & Billing</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Intermediate</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg fill-inter"></div>
             <div class="level-seg"></div>
           </div>
-
           <p>
             This is where it gets exciting — <strong>making money</strong>.
             Shopify gives you a built-in billing system so you don't need Stripe
             to charge merchants. Let's understand how to monetize your apps.
           </p>
-
           <h2>Shopify Billing API</h2>
           <p>
             The <strong>Shopify Billing API</strong> lets you charge merchants
@@ -2723,7 +2530,6 @@ DATABASE_URL=your_database_connection_string</pre>
             <strong>20% of your revenue</strong> and pays you the rest. This is
             completely automatic.
           </p>
-
           <div class="card-grid">
             <div class="grid-card">
               <div class="grid-card-icon">🔄</div>
@@ -2752,7 +2558,6 @@ DATABASE_URL=your_database_connection_string</pre>
               </div>
             </div>
           </div>
-
           <h2>Creating a Subscription Charge</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2786,7 +2591,6 @@ mutation <span class="fn">AppSubscriptionCreate</span>($name: String!, $returnUr
   }
 }</pre>
           </div>
-
           <h2>SaaS Pricing Strategy</h2>
           <div class="card-grid">
             <div class="grid-card">
@@ -2821,7 +2625,6 @@ mutation <span class="fn">AppSubscriptionCreate</span>($name: String!, $returnUr
               </div>
             </div>
           </div>
-
           <h2>Alternative Payment Methods</h2>
           <p>
             While Shopify Billing is easiest for charging merchants inside
@@ -2838,14 +2641,12 @@ mutation <span class="fn">AppSubscriptionCreate</span>($name: String!, $returnUr
             </li>
             <li>Indian merchants who prefer UPI or net banking</li>
           </ul>
-
           <div class="callout info">
             <div class="callout-title">💰 Real Income Math</div>
             100 merchants × $29/month = $2,900/month.<br />
             After Shopify's 20% cut: $2,320/month (~₹1,93,000/month). That's
             passive income while you sleep.
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -2861,38 +2662,30 @@ mutation <span class="fn">AppSubscriptionCreate</span>($name: String!, $returnUr
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 9 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch9">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 09</span>
             <h1 class="chapter-title">Build Your First Shopify App</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Beginner — Hands-On</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg"></div>
             <div class="level-seg"></div>
           </div>
-
           <p>
             Theory is nothing without practice. Let's build a real, working
             Shopify app from scratch. This tutorial creates a simple app that
             displays your store's products in a beautiful Polaris table inside
             the Shopify Admin.
           </p>
-
           <div class="callout info">
             <div class="callout-title">What You'll Build</div>
             A Shopify embedded app that reads all products from a store and
             shows them in a table inside the Admin dashboard. Simple but real —
             it uses OAuth, GraphQL, Polaris, and Next.js.
           </div>
-
           <h2>Step 1: Create a Shopify Partner Account & Dev Store</h2>
           <ol class="step-list">
             <li>
@@ -2912,7 +2705,6 @@ mutation <span class="fn">AppSubscriptionCreate</span>($name: String!, $returnUr
             </li>
             <li>Add some products manually so you have data to display</li>
           </ol>
-
           <h2>Step 2: Create the App with Shopify CLI</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2921,19 +2713,15 @@ mutation <span class="fn">AppSubscriptionCreate</span>($name: String!, $returnUr
             </div>
             <pre><span class="cm"># Create app</span>
 shopify app init
-
 <span class="cm"># When prompted:
 # App name: my-product-viewer
 # Template: Node.js (Next.js)
 # Package manager: npm</span>
-
 cd my-product-viewer
 npm install
-
 <span class="cm"># Start development (connects to your dev store)</span>
 shopify app dev</pre>
           </div>
-
           <h2>Step 3: Understand the Folder Structure</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2952,7 +2740,6 @@ shopify app dev</pre>
 ├── .env                      <span class="cm">← Your API keys (never commit this)</span>
 └── shopify.app.toml          <span class="cm">← App config (scopes, URLs)</span></pre>
           </div>
-
           <div class="callout warn">
             <div class="callout-title">
               Note: Shopify CLI uses Remix by default
@@ -2962,7 +2749,6 @@ shopify app dev</pre>
             the same — loaders fetch data server-side, actions handle form
             submissions. The architecture is identical.
           </div>
-
           <h2>Step 4: Fetch Products from Shopify API</h2>
           <div class="code-wrap">
             <div class="code-header">
@@ -2973,11 +2759,9 @@ shopify app dev</pre>
 <span class="kw">import</span> { json } <span class="kw">from</span> <span class="str">"@remix-run/node"</span>;
 <span class="kw">import</span> { authenticate } <span class="kw">from</span> <span class="str">"../shopify.server"</span>;
 <span class="kw">import</span> { Page, Layout, Card, DataTable } <span class="kw">from</span> <span class="str">"@shopify/polaris"</span>;
-
 <span class="cm">// ─── LOADER: runs on server, fetches products ─────────────</span>
 <span class="kw">export const</span> loader = <span class="kw">async</span> ({ request }) => {
   <span class="kw">const</span> { admin } = <span class="kw">await</span> authenticate.<span class="fn">admin</span>(request);
-
   <span class="kw">const</span> response = <span class="kw">await</span> admin.<span class="fn">graphql</span>(
     <span class="str">`#graphql
       query {
@@ -2994,21 +2778,17 @@ shopify app dev</pre>
       }
     `</span>
   );
-
   <span class="kw">const</span> { data } = <span class="kw">await</span> response.<span class="fn">json</span>();
   <span class="kw">return</span> <span class="fn">json</span>({ products: data.products.edges });
 };
-
 <span class="cm">// ─── COMPONENT: displays products in Polaris table ────────</span>
 <span class="kw">export default function</span> <span class="fn">Index</span>() {
   <span class="kw">const</span> { products } = <span class="fn">useLoaderData</span>();
-
   <span class="kw">const</span> rows = products.<span class="fn">map</span>(({ node }) => [
     node.title,
     node.status,
     node.totalInventory
   ]);
-
   <span class="kw">return</span> (
     &lt;<span class="tag">Page</span> title=<span class="str">"My Products"</span>&gt;
       &lt;<span class="tag">Layout</span>&gt;
@@ -3026,7 +2806,6 @@ shopify app dev</pre>
   );
 }</pre>
           </div>
-
           <h2>Step 5: Test the App</h2>
           <ol class="step-list">
             <li>
@@ -3037,7 +2816,6 @@ shopify app dev</pre>
             <li>Approve the permissions prompt</li>
             <li>You should see your products displayed in a Polaris table!</li>
           </ol>
-
           <div class="callout success">
             <div class="callout-title">🎉 Congratulations!</div>
             You just built your first working Shopify app. It authenticates
@@ -3045,7 +2823,6 @@ shopify app dev</pre>
             displays it using Polaris. This is the foundation — every app you
             build starts from exactly this.
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -3061,38 +2838,30 @@ shopify app dev</pre>
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 10 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch10">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 10</span>
             <h1 class="chapter-title">Advanced Shopify Apps</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Advanced</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg fill-inter"></div>
             <div class="level-seg fill-adv"></div>
           </div>
-
           <p>
             Once you can build a basic app, the next step is going deeper.
             Advanced Shopify apps handle real business complexity — syncing
             data, integrating with external systems, and extending Shopify's
             core functionality.
           </p>
-
           <h2>Webhooks (Advanced Usage)</h2>
           <p>
             At the beginner level, webhooks "notify you when something happens".
             At the advanced level, you use them for
             <strong>real-time data pipelines</strong>.
           </p>
-
           <div class="code-wrap">
             <div class="code-header">
               <span class="code-lang">Webhook Handler — Order Created</span
@@ -3101,11 +2870,9 @@ shopify app dev</pre>
             <pre><span class="cm">// app/routes/webhooks.jsx</span>
 <span class="kw">import</span> { authenticate } <span class="kw">from</span> <span class="str">"../shopify.server"</span>;
 <span class="kw">import</span> db <span class="kw">from</span> <span class="str">"../db.server"</span>;
-
 <span class="kw">export const</span> action = <span class="kw">async</span> ({ request }) => {
   <span class="cm">// IMPORTANT: Always verify the webhook signature first!</span>
   <span class="kw">const</span> { topic, shop, payload } = <span class="kw">await</span> authenticate.<span class="fn">webhook</span>(request);
-
   <span class="kw">switch</span> (topic) {
     <span class="kw">case</span> <span class="str">"ORDERS_CREATE"</span>:
       <span class="cm">// New order! Save to DB, send notification, sync to ERP</span>
@@ -3118,17 +2885,14 @@ shopify app dev</pre>
         }
       });
       <span class="kw">break</span>;
-
     <span class="kw">case</span> <span class="str">"PRODUCTS_UPDATE"</span>:
       <span class="cm">// Product changed — update your cache or external system</span>
       <span class="kw">await</span> <span class="fn">syncProductToERP</span>(payload);
       <span class="kw">break</span>;
   }
-
   <span class="kw">return</span> <span class="kw">new</span> <span class="fn">Response</span>(<span class="str">"OK"</span>);
 };</pre>
           </div>
-
           <h2>Types of Advanced Apps</h2>
           <div class="card-grid">
             <div class="grid-card">
@@ -3182,7 +2946,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>Background Jobs & Queues</h2>
           <p>
             Some tasks can't run during an HTTP request — they take too long.
@@ -3195,7 +2958,6 @@ shopify app dev</pre>
             background job that processes in the background while the merchant
             keeps using the app.
           </p>
-
           <div class="card-grid">
             <div class="grid-card">
               <div class="grid-card-icon">⏱️</div>
@@ -3214,7 +2976,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <div class="two-col">
             <div class="tip-box">
               <div class="box-title">✓ Pro Tips</div>
@@ -3235,7 +2996,6 @@ shopify app dev</pre>
               </ul>
             </div>
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -3251,23 +3011,17 @@ shopify app dev</pre>
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 11 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch11">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 11</span>
             <h1 class="chapter-title">Freelancing with Shopify Apps</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <p>
             Now that you can build apps, it's time to
             <strong>make real money</strong>. Freelancing is the fastest path to
             income as a new Shopify app developer. Here's a practical playbook.
           </p>
-
           <h2>Where to Find Clients</h2>
           <div class="card-grid">
             <div class="grid-card">
@@ -3307,7 +3061,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>Pricing Strategy</h2>
           <div class="accordion">
             <div class="accordion-item open">
@@ -3343,7 +3096,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>Portfolio Strategy</h2>
           <p>
             Without a portfolio, no client will trust you. Build 3 demo apps and
@@ -3368,7 +3120,6 @@ shopify app dev</pre>
             Put them on GitHub (public repos). Add links to Upwork/Fiverr
             profile.
           </p>
-
           <div class="callout success">
             <div class="callout-title">
               🎯 Beginner Strategy That Actually Works
@@ -3378,7 +3129,6 @@ shopify app dev</pre>
             immediately. Offer to build it for a discounted rate in exchange for
             a review. First 5 reviews = everything.
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -3394,31 +3144,24 @@ shopify app dev</pre>
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 12 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch12">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 12</span>
             <h1 class="chapter-title">Shopify SaaS Business</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <div class="level-bar">
             <span class="level-label">Advanced — Business</span>
             <div class="level-seg fill-beginner"></div>
             <div class="level-seg fill-inter"></div>
             <div class="level-seg fill-adv"></div>
           </div>
-
           <p>
             SaaS (Software as a Service) is the <strong>ultimate goal</strong> —
             you build an app once, merchants pay you every month, you earn while
             you sleep. This is how real wealth is built in the Shopify
             ecosystem.
           </p>
-
           <h2>What is Micro-SaaS?</h2>
           <p>
             Micro-SaaS is a small, focused software product that solves
@@ -3426,7 +3169,6 @@ shopify app dev</pre>
             1–3 people. It's the perfect model for individual Shopify
             developers.
           </p>
-
           <div class="card-grid">
             <div class="grid-card">
               <div class="grid-card-icon">📢</div>
@@ -3453,7 +3195,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>App Store Strategy</h2>
           <ol>
             <li>
@@ -3481,7 +3222,6 @@ shopify app dev</pre>
               merchants request. Each update = better retention.
             </li>
           </ol>
-
           <h2>MRR (Monthly Recurring Revenue) Growth</h2>
           <div class="diagram">
             <div style="display: flex; flex-direction: column; gap: 0.5rem">
@@ -3589,14 +3329,12 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <div class="callout info">
             <div class="callout-title">💡 Churn is Your Enemy</div>
             Keep merchants using your app. Respond to support tickets within 24
             hours. Push feature updates monthly. A merchant who stays 12 months
             is worth 12× a one-time payment. Retention > acquisition.
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -3612,23 +3350,17 @@ shopify app dev</pre>
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 13 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch13">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 13</span>
             <h1 class="chapter-title">Career Opportunities</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <p>
             Shopify app development isn't just freelancing — it's a growing
             career path with massive demand, especially for Indian developers in
             a global market.
           </p>
-
           <h2>What Companies Hire For</h2>
           <div class="card-grid">
             <div class="grid-card">
@@ -3656,7 +3388,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>Career Paths</h2>
           <div class="accordion">
             <div class="accordion-item open">
@@ -3706,7 +3437,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>Beginner Roadmap to First Job</h2>
           <ol class="step-list">
             <li>Complete this course and build 3 portfolio apps</li>
@@ -3722,7 +3452,6 @@ shopify app dev</pre>
             </li>
             <li>Keep building personal projects — it compounds over time</li>
           </ol>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -3738,23 +3467,17 @@ shopify app dev</pre>
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 14 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch14">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 14</span>
             <h1 class="chapter-title">2-Month Learning Roadmap</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <p>
             Here's a realistic, beginner-friendly week-by-week plan. Commit
             <strong>2–3 hours daily</strong> and you'll be building real apps
             within 8 weeks.
           </p>
-
           <div class="timeline">
             <div class="tl-item">
               <div class="tl-line"></div>
@@ -3784,7 +3507,6 @@ shopify app dev</pre>
                 </div>
               </div>
             </div>
-
             <div class="tl-item">
               <div class="tl-line"></div>
               <div class="tl-dot week2">W2</div>
@@ -3812,7 +3534,6 @@ shopify app dev</pre>
                 </div>
               </div>
             </div>
-
             <div class="tl-item">
               <div class="tl-line"></div>
               <div class="tl-dot week3">W3</div>
@@ -3841,7 +3562,6 @@ shopify app dev</pre>
                 </div>
               </div>
             </div>
-
             <div class="tl-item">
               <div class="tl-line"></div>
               <div class="tl-dot week4">W4</div>
@@ -3868,7 +3588,6 @@ shopify app dev</pre>
                 </div>
               </div>
             </div>
-
             <div class="tl-item">
               <div class="tl-line"></div>
               <div class="tl-dot week3">W5</div>
@@ -3899,7 +3618,6 @@ shopify app dev</pre>
                 </div>
               </div>
             </div>
-
             <div class="tl-item">
               <div class="tl-line"></div>
               <div class="tl-dot week4">W6</div>
@@ -3928,7 +3646,6 @@ shopify app dev</pre>
                 </div>
               </div>
             </div>
-
             <div class="tl-item">
               <div class="tl-line"></div>
               <div class="tl-dot week5">W7</div>
@@ -3957,7 +3674,6 @@ shopify app dev</pre>
                 </div>
               </div>
             </div>
-
             <div class="tl-item">
               <div class="tl-dot week4">W8</div>
               <div class="tl-body">
@@ -3985,7 +3701,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <div class="callout success">
             <div class="callout-title">📅 Daily Schedule (2–3 hours/day)</div>
             <strong>30 min</strong> — Review yesterday's code / read docs<br />
@@ -3993,7 +3708,6 @@ shopify app dev</pre>
             <strong>30 min</strong> — Watch tutorial or read articles<br />
             <strong>15 min</strong> — Update portfolio / post on LinkedIn
           </div>
-
           <div class="yt-box">
             <div class="yt-icon">▶️</div>
             <div class="yt-content">
@@ -4009,22 +3723,16 @@ shopify app dev</pre>
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════════ -->
-        <!-- CHAPTER 15 -->
-        <!-- ════════════════════════════════════════ -->
         <section class="chapter" id="ch15">
           <div class="chapter-header">
             <span class="chapter-num">CHAPTER 15</span>
             <h1 class="chapter-title">Best Resources</h1>
           </div>
           <div class="chapter-divider"></div>
-
           <p>
             The best Shopify app developers never stop learning. Here are the
             resources you should bookmark and use every week.
           </p>
-
           <h2>📖 Official Documentation</h2>
           <div class="resource-grid">
             <div class="resource-card">
@@ -4099,7 +3807,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>▶️ YouTube Channels</h2>
           <div class="resource-grid">
             <div class="resource-card">
@@ -4159,7 +3866,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>▶️ Key Tutorial URLs</h2>
           <div class="accordion">
             <div class="accordion-item">
@@ -4299,7 +4005,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>💬 Communities</h2>
           <div class="resource-grid">
             <div class="resource-card">
@@ -4359,7 +4064,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <h2>🛠️ Best Tools & GitHub Repos</h2>
           <div class="resource-grid">
             <div class="resource-card">
@@ -4405,7 +4109,6 @@ shopify app dev</pre>
               </div>
             </div>
           </div>
-
           <div class="callout success">
             <div class="callout-title">🏆 Final Advice</div>
             Don't just read — <strong>build something every single day</strong>.
@@ -4415,8 +4118,6 @@ shopify app dev</pre>
             <strong>You have a massive opportunity right now. Take it.</strong>
           </div>
         </section>
-
-        <!-- Footer -->
         <div
           style="
             margin-top: 4rem;
@@ -4454,36 +4155,27 @@ shopify app dev</pre>
         </div>
       </main>
     </div>
-
     <script>
-      // ─── HAMBURGER ─────────────────────────────────
       const hamburger = document.getElementById("hamburgerBtn");
       const sidebar = document.getElementById("sidebar");
       const overlay = document.getElementById("sidebarOverlay");
-
       hamburger.addEventListener("click", () => {
         sidebar.classList.toggle("open");
         overlay.classList.toggle("open");
       });
       overlay.addEventListener("click", closeSidebar);
-
       function closeSidebar() {
         sidebar.classList.remove("open");
         overlay.classList.remove("open");
       }
-
-      // ─── PROGRESS BAR ──────────────────────────────
       window.addEventListener("scroll", () => {
         const scrolled = window.scrollY;
         const total = document.body.scrollHeight - window.innerHeight;
         const pct = (scrolled / total) * 100;
         document.getElementById("progressBar").style.width = pct + "%";
       });
-
-      // ─── ACTIVE TOC ────────────────────────────────
       const chapters = document.querySelectorAll(".chapter");
       const tocLinks = document.querySelectorAll(".toc-item");
-
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -4500,10 +4192,7 @@ shopify app dev</pre>
         },
         { rootMargin: "-60px 0px -60% 0px" },
       );
-
       chapters.forEach((ch) => observer.observe(ch));
-
-      // ─── COPY BUTTONS ──────────────────────────────
       function copyCode(btn) {
         const pre = btn.closest(".code-wrap").querySelector("pre");
         const text = pre.innerText;
@@ -4516,12 +4205,9 @@ shopify app dev</pre>
           }, 2000);
         });
       }
-
-      // ─── ACCORDION ─────────────────────────────────
       function toggleAccordion(header) {
         const item = header.parentElement;
         const wasOpen = item.classList.contains("open");
-        // close all in same parent
         const siblings = item.parentElement.querySelectorAll(".accordion-item");
         siblings.forEach((s) => s.classList.remove("open"));
         if (!wasOpen) item.classList.add("open");
