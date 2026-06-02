@@ -36,6 +36,22 @@
         --font-body: "DM Sans", sans-serif;
         --font-code: "JetBrains Mono", monospace;
       }
+      [data-theme="light"] {
+        --bg: #d0d6e052;
+        --bg2: #ebecf6;
+        --bg3: #1a1e28;
+        --surface: #ffffff;
+        --surface2: #f8fafc;
+        --border: #8298bd;
+        --border2: #c8d2e3;
+        --text: #413470;
+        --text2: #03245a;
+        --text3: #6b7280;
+        --glow: rgba(91, 141, 238, 0.08);
+        --glow2: rgba(124, 77, 255, 0.06);
+        --accent: #253f72;
+        --accent2: #3394ff;
+      }
       *,
       *::before,
       *::after {
@@ -43,7 +59,7 @@
         margin: 0;
         padding: 0;
       }
-      
+
       html {
         scroll-behavior: smooth;
       }
@@ -61,7 +77,7 @@
         left: 0;
         right: 0;
         z-index: 100;
-        background: rgba(11, 13, 17, 0.88);
+        background: var(--bg);
         backdrop-filter: blur(16px);
         border-bottom: 1px solid var(--border);
         padding: 0 2rem;
@@ -1016,6 +1032,57 @@
       .chapter {
         animation: fadeUp 0.4s ease both;
       }
+      /* toggle button css */
+      .theme-toggle {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
+
+      .toggle-track {
+        width: 64px;
+        height: 34px;
+        background: linear-gradient(135deg, var(--surface2), var(--border));
+        border: 1px solid var(--border2);
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        padding: 4px;
+        box-shadow:
+          inset 0 2px 8px rgba(0, 0, 0, 0.25),
+          0 4px 16px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+      }
+
+      .toggle-thumb {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent5), #ffb703);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        transform: translateX(0);
+        transition: all 0.3s ease;
+        box-shadow:
+          0 4px 12px rgba(255, 209, 102, 0.4),
+          0 0 20px rgba(255, 209, 102, 0.2);
+      }
+
+      /* Light theme active */
+      [data-theme="light"] .toggle-track {
+        background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+      }
+
+      [data-theme="light"] .toggle-thumb {
+        transform: translateX(30px);
+        background: linear-gradient(135deg, #5b8dee, #7c4dff);
+        box-shadow:
+          0 4px 12px rgba(91, 141, 238, 0.4),
+          0 0 20px rgba(91, 141, 238, 0.2);
+      }
     </style>
   </head>
   <body>
@@ -1026,6 +1093,15 @@
       <div class="site-logo">⚡ Shopify App Mastery</div>
       <div class="header-badge">
         <span class="badge-pill">15 Chapters</span>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          <span class="toggle-track">
+            <span class="toggle-thumb">☀️</span>
+          </span>
+        </button>
       </div>
       <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -4213,6 +4289,23 @@ shopify app dev</pre>
         siblings.forEach((s) => s.classList.remove("open"));
         if (!wasOpen) item.classList.add("open");
       }
+    </script>
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const thumb = document.querySelector(".toggle-thumb");
+
+      toggleBtn.addEventListener("click", () => {
+        const currentTheme =
+          document.documentElement.getAttribute("data-theme");
+
+        if (currentTheme === "light") {
+          document.documentElement.removeAttribute("data-theme");
+          thumb.textContent = "☀️";
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+          thumb.textContent = "🌙";
+        }
+      });
     </script>
   </body>
 </html>
